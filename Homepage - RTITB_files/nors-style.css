@@ -1,0 +1,150 @@
+﻿/* NORS specific overrides of the PLORS stylesheet */
+
+/* Molokini restyle - import "Open Sans" font */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+a {
+    color: #FCC44D;
+}
+
+body {
+    font-family: Open Sans;
+}
+
+.textbox,
+.dropdownlist,
+input,
+textarea,
+select {
+    font-family: Open Sans;
+}
+
+.rtitb-logo,
+.nors-logo {
+    height: 130px;
+    max-width: 100%;
+}
+
+.rtitb-logo {
+    float: left;
+}
+
+.nors-logo {
+    float: right;
+}
+
+@media only screen and (max-width: 767px) {
+    .rtitb-logo,
+    .nors-logo {
+        height: auto;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .rtitb-logo {
+        width: 30%;
+    }
+
+    .nors-logo {
+        width: 80%;
+    }
+}
+
+.section-wrapper.header {
+    border-bottom: 33px solid #191C62;
+}
+
+.section-wrapper.menu {
+    border-top: 33px solid #F9C62D;
+    border-bottom: none;
+    background: none;
+}
+
+    .section-wrapper.menu .section {
+        border-left: 1px solid #D3D3D3;
+        border-right: 1px solid #D3D3D3;
+    }
+
+.section-wrapper.footer {
+    border-top: 5px solid #191C62;
+}
+
+#menu ul li {
+    border-left: 2px solid #EEEEEE;
+}
+
+    #menu ul li a {
+        color: #000;
+    }
+
+        #menu ul li a:hover {
+            color: #000;
+            background: none;
+        }
+
+@media only screen and (max-width: 767px) {
+    #menu ul li {
+        border-left: none;
+    }
+}
+
+h1.block-fill, h2.block-fill, h3.block-fill {
+    background-color: #44419F;
+}
+
+.hoge-button {
+    background: #BAD405;
+    background-image: -webkit-linear-gradient(top, #BAD405, #97AD00);
+    background-image: -moz-linear-gradient(top, #BAD405, #97AD00);
+    background-image: -ms-linear-gradient(top, #BAD405, #97AD00);
+    background-image: -o-linear-gradient(top, #BAD405, #97AD00);
+    background-image: linear-gradient(to bottom, #BAD405, #97AD00);
+}
+
+    .hoge-button:hover {
+        background: #BAD405;
+        background-image: -webkit-linear-gradient(top, #97AD00, #BAD405);
+        background-image: -moz-linear-gradient(top, #97AD00, #BAD405);
+        background-image: -ms-linear-gradient(top, #97AD00, #BAD405);
+        background-image: -o-linear-gradient(top, #97AD00, #BAD405);
+        background-image: linear-gradient(to bottom, #97AD00, #BAD405);
+        text-decoration: none;
+    }
+
+.hoge-submit {
+    background: #FAD839;
+    background-image: -webkit-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: -moz-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: -ms-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: -o-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: linear-gradient(to bottom, #FAD839, #EAB54B);
+}
+
+    .hoge-submit:hover {
+        background: #EAB54B;
+        background-image: -webkit-linear-gradient(top, #EAB54B, #FAD839);
+        background-image: -moz-linear-gradient(top, #EAB54B, #FAD839);
+        background-image: -ms-linear-gradient(top, #EAB54B, #FAD839);
+        background-image: -o-linear-gradient(top, #EAB54B, #FAD839);
+        background-image: linear-gradient(to bottom, #EAB54B, #FAD839);
+        text-decoration: none;
+    }
+
+.bordered-box .header {
+    background: #625E90;
+    background-image: -webkit-linear-gradient(top, #625E90, #2C2D6E);
+    background-image: -moz-linear-gradient(top, #625E90, #2C2D6E);
+    background-image: -ms-linear-gradient(top, #625E90, #2C2D6E);
+    background-image: -o-linear-gradient(top, #625E90, #2C2D6E);
+    background-image: linear-gradient(to bottom, #625E90, #2C2D6E);
+}
+
+.tab.active {
+    background: #FAD839;
+    background-image: -webkit-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: -moz-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: -ms-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: -o-linear-gradient(top, #FAD839, #EAB54B);
+    background-image: linear-gradient(to bottom, #FAD839, #EAB54B);
+}

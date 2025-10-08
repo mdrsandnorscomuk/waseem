@@ -1,0 +1,187 @@
+﻿
+/* Bare bones CSS for Hoge specific add-ons to the Molokini styling */
+/* Prefix all classes with "hoge-" to avoid any conflicts */
+
+#hoge-container {
+    width: 90%;
+    max-width: 1450px;
+    margin-top: 96px;
+    margin-right: auto;
+    margin-bottom: 36px;
+    margin-left: auto;
+}
+
+.hoge-section {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.hoge-col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1%;
+    /*margin: 0 0 0 1%;*/
+}
+
+    .hoge-col:first-child {
+        margin-left: 0;
+    }
+
+.hoge-group:before,
+.hoge-group:after {
+    content: "";
+    display: table;
+}
+
+.hoge-group:after {
+    clear: both;
+}
+
+.hoge-span-3-of-12 {
+    width: 24.25%;
+}
+
+.hoge-span-4-of-12 {
+    width: 32.66%;
+}
+
+.hoge-span-6-of-12 {
+  	width: 49.5%;
+}
+
+.hoge-span-12-of-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .hoge-col {
+        margin-left: 0;
+    }
+
+    .hoge-span-3-of-12,
+    .hoge-span-4-of-12,
+    .hoge-span-6-of-12,
+    .hoge-span-12-of-12 {
+        width: 100%;
+    }
+}
+
+.hoge-full-width {
+    width: 100% !important;
+}
+
+.hoge-hr {
+    display: block;
+    border-bottom: 1px solid #131663;
+    margin: 20px 0;
+}
+
+.hoge-literal {
+    color: #131663;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.66667rem !important;
+}
+
+.hoge-error-text,
+.hoge-info-text {
+    padding: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.13333rem;
+}
+
+.hoge-error-text {
+    background-color: #FEF6F3;
+    border: 1px solid #CD0A0A;
+    color: #CD0A0A;
+}
+
+.hoge-info-text {
+    background-color: #FCFAF2;
+    border: 1px solid #FCEFA1;
+    color: #363636;
+}
+
+ul.hoge-password-requirements {
+    padding-left: 50px;
+}
+
+    ul.hoge-password-requirements li {
+        list-style-type: disc;
+    }
+
+input[type=text],
+input[type=text].hoge-textbox,
+input[type=password],
+input[type=password].hoge-textbox {
+    background: #f7f7f7;
+    border: 1px solid #c4c4c4;
+    color: #787878;
+    transition: all .5s;
+    font-size: 16px;
+    margin: 0;
+    padding: 12px;
+}
+
+input[type=button],
+input[type=button].hoge-button ,
+input[type=submit],
+input[type=submit].hoge-submit {
+    background-color: #efac2b;
+    padding: 30px;
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.four-twenty-lal {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+.four-twenty-lal {
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+}
+
+ul.element-list {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+ul.element-list li {
+    line-height: 48px !important;
+}
+
+@media screen and (min-width: 768px) {
+    body .et_pb_button {
+        min-width: initial;
+    }
+}
+
+.hoge-margin-tb {
+    margin: 10px 0;
+}
+
+.hoge-align-center {
+    text-align: center;
+}
+
+.ui-front {
+    z-index: 999999;
+}
+
+.et_pb_button.hoge-button-no-border,
+.et_pb_button.hoge-button-no-border:hover {
+    border: none;
+}

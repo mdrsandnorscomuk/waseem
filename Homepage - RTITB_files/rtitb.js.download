@@ -1,0 +1,210 @@
+/*
+
+ RTITB v2.0
+ Molokini Marketing / www.molokini.co.uk
+
+ RS - 29/05/19
+
+*/
+
+/* ---------------------------- RTITB who we work Slider ---------------------------- */
+
+var rtitbCustomer;
+rtitbCustomer=jQuery('.rtitb-customer').owlCarousel({
+	nav: true,
+	navText: ['&#x34;','&#x35;'],
+	autoplay: true,
+	autoplayHoverPause:true,
+	autoplayTimeout:4000,
+	loop:true,
+	responsive:{
+		0:{
+			
+			items:2,
+			margin:12,
+		},
+		768:{
+			items:3,
+			margin:36,
+		},
+		1024:{
+			items:4,
+			margin:64,
+		},
+		1280:{
+			items:4,
+			margin:80,
+		},
+		1440:{
+			items:5,
+			margin:80,
+		},
+		1920:{
+			items:6,
+			margin:80,
+		}		
+	}
+});
+
+/* ---------------------------- RTITB Accreditations Slider ---------------------------- */
+
+var rtitbAccer;
+rtitbAccer=jQuery('.rtitb-accer').owlCarousel({
+	nav: true,
+	navText: ['&#x34;','&#x35;'],
+	autoplay: true,
+	autoplayHoverPause:true,
+	autoplayTimeout:4000,
+	loop:true,
+	responsive:{
+		0:{
+			
+			items:2,
+			margin:12,
+		},
+		768:{
+			items:3,
+			margin:36,
+		},
+		1024:{
+			items:4,
+			margin:64,
+		},
+		1280:{
+			items:4,
+			margin:80,
+		},
+		1440:{
+			items:5,
+			margin:80,
+		},
+		1920:{
+			items:6,
+			margin:80,
+		}		
+	}
+});
+
+/* ---------------------------- RTITB Team Slider ---------------------------- */
+
+var rtitbteam;
+rtitbteam=jQuery('.rtitb-team').owlCarousel({
+	nav: true,
+	navText: ['&#x34;','&#x35;'],
+	autoplay: false,
+	autoplayHoverPause:true,
+	autoplayTimeout:4000,
+	loop:true,
+	responsive:{
+		0:{
+			
+			items:2,
+			margin:12,
+		},
+		415:{
+			
+			items:2,
+			margin:12,
+		},
+		768:{
+			items:3,
+			margin:36,
+		},
+		1024:{
+			items:3,
+			margin:64,
+		},
+		1280:{
+			items:4,
+			margin:80,
+		},
+		1440:{
+			items:4,
+			margin:80,
+		},
+		1920:{
+			items:4,
+			margin:80,
+		}		
+	}
+});
+
+
+/* ---------------------------- RTITB Latest News Slider ---------------------------- */
+
+var rtitb_test;
+rtitb_test=jQuery('#rtitb__news_grid_mob .dp_ppp_module').owlCarousel({
+	nav: true,
+	navText: ['&#x34;','&#x35;'],
+	autoplay: false,
+	loop:true,
+    dots: false,
+	responsive:{
+		0:{
+			
+			items:1,
+			margin:10,
+		},
+        480:{
+			items:2,
+			margin:20,
+		},
+		768:{
+			items:3,
+			margin:0,
+		},
+			
+	}
+});
+
+
+/* ------------------------------ Gated Content ---------------------------------- */
+
+jQuery.fancybox.defaults.animationEffect = "fade";
+
+/* ------------------------------- Course Booking Aids --------------------------- */
+
+jQuery('.rtitb__form #outside').change(function(){
+	if(this.checked){
+		jQuery('.rtitb__form input[name="postcode"]').prop('disabled',true).attr('value','');
+	}else{
+		jQuery('.rtitb__form input[name="postcode"]').prop('disabled',false);
+	}
+});
+
+/* ----------------------------- Course Search Aids ------------------------------- */
+
+jQuery(window).load(function(){
+	if(jQuery('#search-results').length > 0){
+		var headerOffset = jQuery('#wpadminbar').height() + jQuery('#top-header').height() + jQuery('#main-header').height();
+		jQuery('html, body').animate({
+        	scrollTop: jQuery('#search-results').offset().top - headerOffset
+    	}, 500);
+	}
+});
+
+/* ----------------------------- Open LinkedIN in new tabs ------------------------------- */
+
+    jQuery(document).ready(function($) {
+        $(".et_pb_member_social_links a").attr('target', '_blank');
+    });
+
+
+/* --------------------------- Field Validation -------------------------------------- */
+
+jQuery('form[name="cpcsearch"]').on('submit', function(){
+	if(jQuery('#regionId').val() == 'Please select'){
+		var f = document.getElementById('regionId');
+		f.setCustomValidity('Please choose a region');
+		return false;
+	}
+});
+
+
+jQuery('form[name="inssearch"]').on('submit', function(){
+	if(jQuery('#regionId').val() == 'Please select'){
+		var f = document.getElementById('regionId');
+		f.setCustomValidity('Please choose a region');
+		return false;
+	}
+});
